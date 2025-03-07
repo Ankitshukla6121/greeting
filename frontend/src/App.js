@@ -8,7 +8,7 @@ function App() {
 
   const fetchGreeting = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/greet?name=${name}`);
+      const response = await axios.get(`https://greeting-44b6.onrender.com/api/greet?name=${name}`);
       setMessage(response.data.message);
       setError("");
     } catch (err) {
